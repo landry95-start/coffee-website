@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Home page*/
+
+#home{
+    height: 85vh;
+    background-color: rgb(151, 5, 5);
+}
+
+/*navigation links*/
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: rgb(151, 5, 5);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar .logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-bar .nav-links ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar .nav-links ul li{
+    margin: 10px 20px;
+    padding: 0px 15px;
+}
+
+.nav-bar .nav-links ul li:hover{
+    background-color: gold;
+    border-radius: 20px;
+}
+
+
+.nav-bar .nav-links ul li a:hover{
+    color: black;
+}
+
+/*presentation of coffee*/
+
+.presentation{
+    padding: 100px 0 0 40px;
+    width: 100%;
+}
+
+.presentation h2{
+   font-family: cursive;
+   color: goldenrod;
+   font-size: 35px;
+   margin-bottom: 15px;
+}
+
+.presentation h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+.presentation p{
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    width: 450px;
+}
+
+.presentation .btn1{
+    margin-right: 20px;
+    border: 2px solid goldenrod;
+    background: goldenrod;
+    transition: 0.5s ease;
+}
+
+.presentation .btn1:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.presentation .btn2{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.presentation .btn2:hover{
+    background: goldenrod;
+    border: 2px solid goldenrod;
+    color: black;
+}
+
+.presentation button{
+    padding: 15px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+/*About page styling*/
+
+.about-section{
+    padding: 120px 80px;
+    background-color: rgb(212, 186, 191);
+}
+
+.about-section .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-img {
+    margin-right: 70px;
+}
+
+.about-section .about-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.about-details{
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+
+.about-details h1{
+    margin-bottom: 30px;
+}
+
+.about-content .about-details h1::before{
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid goldenrod;
+    border-radius: 5px;
+    width: 120px;
+    top: 40px;
+    margin-left: 20px;
+    
+}
+
+.about-content .about-details p{
+    line-height: 30px;
+    margin: 30px 0 50px 0;
+    font-size: 18px;
+}
+
+.social-media a{
+    margin: 0 10px;
+    color: brown;
+}
+
+.social-media a:hover{
+    transition: 0.2s ease;
+    color: rgb(110, 32, 110);
+}
+
+/*section menu styling*/
+
+#menu-section{
+    background-color: rgb(61, 54, 54);
+    padding: 100px 80px;
+    position: relative;
+    text-align: center;
+}
+
+#menu-section h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+#menu-section h1::before{
+    content: "";
+    border-bottom: 4px solid gold;
+    width: 50px;
+    position: absolute;
+    top: 13%;
+    width: 110px;
+    border-radius: 5px;
+    left: 46%;
+}
+
+#menu-section .img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#menu-section .img .product{
+    width: 30%;
+}
+
+#menu-section .img .product img{
+    width: 100%;
+}
+
+.description h2{
+    color: white;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description p{
+    color: white;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*section Gallery styling*/
+
+#gallery{
+    background-color: white;
+    padding: 120px 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+#gallery h1::before{
+    content: "";
+    border-bottom: 4px solid gold;
+    width: 50px;
+    position: absolute;
+    top: 17%;
+    width: 110px;
+    border-radius: 5px;
+    left: 46%;
+}
+
+.gallery-section{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    margin-top: 100px;
+}
+
+.gallery1{
+    background-image: url('../img/WhatsApp\ Image\ 2026-02-10\ at\ 18.43.25.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.gallery2{
+    background-image: url('../img/WhatsApp\ Image\ 2026-02-10\ at\ 19.14.03.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.gallery3{
+    background-image: url('../img/WhatsApp\ Image\ 2026-02-10\ at\ 19.03.31.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.gallery4{
+    background-image: url('../img/WhatsApp\ Image\ 2026-02-10\ at\ 19.14.03.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.gallery5{
+    background-image: url('../img/WhatsApp\ Image\ 2026-02-10\ at\ 19.03.31.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.gallery6{
+    background-image: url('../img/WhatsApp\ Image\ 2026-02-10\ at\ 18.43.25.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+/*section contact page styling*/
+
+#contact{
+    padding: 110px 80px;
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+#contact h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.contact-details li{
+    list-style-type: none;
+    display: flex;
+    padding: 15px 0;
+}
+
+.contact-details li p{
+    padding: 0 30px;
+}
+
+.contact-section form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form input{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-top: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.contact-section form input:focus{
+    border-color: gold;
+}
+
+.contact-section form textarea{
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    padding: 12px 15px;
+}
+
+.contact-section form textarea:focus{
+    border-color: gold;
+}
+
+.contact-section form button{
+    width: 20%;
+    margin-top: 30px;
+    color: white;
+    background-color: brown;
+    border: 1px solid brown;
+    padding: 15px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+.contact-section form button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#policy{
+    background-color: black;
+    padding: 20px 20px;
+}
+
+.policy-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#policy i{
+    color: white;
+}
+
+#policy i:hover{
+    color: gold;
+}
+
+#policy a{
+    color: white;
+    text-decoration: none;
+}
+
+#policy p{
+    color: white;
+}
+
+#policy a:hover{
+    color: gold;
+}
+
+
+@media (max-width:900px){
+
+}
+
